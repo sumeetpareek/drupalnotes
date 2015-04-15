@@ -18,7 +18,7 @@ function bootstrap_preprocess_page(&$variables) {
     $variables['content_column_class'] = ' class="col-sm-9"';
   }
   else {
-    if (arg(0) == "node" && arg(1) == "add") {
+    if ((arg(0) == "node" && arg(1) == "add") || (arg(0) == "node" && arg(2) == "edit")) {
       $variables['content_column_class'] = ' class="col-sm-8 col-sm-offset-2"'; 
     } else {
       $variables['content_column_class'] = ' class="col-sm-12"';  
